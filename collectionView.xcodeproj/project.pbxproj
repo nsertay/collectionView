@@ -13,6 +13,10 @@
 		ED1F28D72A06967100A50CAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED1F28D52A06967100A50CAD /* Main.storyboard */; };
 		ED1F28D92A06967200A50CAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED1F28D82A06967200A50CAD /* Assets.xcassets */; };
 		ED1F28DC2A06967200A50CAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED1F28DA2A06967200A50CAD /* LaunchScreen.storyboard */; };
+		ED1F28E52A06978300A50CAD /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = ED1F28E42A06978300A50CAD /* SnapKit */; };
+		ED1F28E72A06984900A50CAD /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1F28E62A06984900A50CAD /* ImageCell.swift */; };
+		ED1F28E92A069B2400A50CAD /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1F28E82A069B2400A50CAD /* APIManager.swift */; };
+		ED1F28EB2A07613200A50CAD /* ImageStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1F28EA2A07613200A50CAD /* ImageStruct.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,9 @@
 		ED1F28D82A06967200A50CAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED1F28DB2A06967200A50CAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED1F28DD2A06967200A50CAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED1F28E62A06984900A50CAD /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
+		ED1F28E82A069B2400A50CAD /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		ED1F28EA2A07613200A50CAD /* ImageStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStruct.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED1F28E52A06978300A50CAD /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +71,9 @@
 				ED1F28D82A06967200A50CAD /* Assets.xcassets */,
 				ED1F28DA2A06967200A50CAD /* LaunchScreen.storyboard */,
 				ED1F28DD2A06967200A50CAD /* Info.plist */,
+				ED1F28E62A06984900A50CAD /* ImageCell.swift */,
+				ED1F28E82A069B2400A50CAD /* APIManager.swift */,
+				ED1F28EA2A07613200A50CAD /* ImageStruct.swift */,
 			);
 			path = collectionView;
 			sourceTree = "<group>";
@@ -83,6 +94,9 @@
 			dependencies = (
 			);
 			name = collectionView;
+			packageProductDependencies = (
+				ED1F28E42A06978300A50CAD /* SnapKit */,
+			);
 			productName = collectionView;
 			productReference = ED1F28CC2A06967100A50CAD /* collectionView.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +125,9 @@
 				Base,
 			);
 			mainGroup = ED1F28C32A06967100A50CAD;
+			packageReferences = (
+				ED1F28E32A06978300A50CAD /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = ED1F28CD2A06967100A50CAD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,7 +156,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED1F28D42A06967100A50CAD /* ViewController.swift in Sources */,
+				ED1F28E72A06984900A50CAD /* ImageCell.swift in Sources */,
+				ED1F28E92A069B2400A50CAD /* APIManager.swift in Sources */,
 				ED1F28D02A06967100A50CAD /* AppDelegate.swift in Sources */,
+				ED1F28EB2A07613200A50CAD /* ImageStruct.swift in Sources */,
 				ED1F28D22A06967100A50CAD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -358,6 +378,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ED1F28E32A06978300A50CAD /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ED1F28E42A06978300A50CAD /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ED1F28E32A06978300A50CAD /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ED1F28C42A06967100A50CAD /* Project object */;
 }
