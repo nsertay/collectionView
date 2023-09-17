@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1BA546EC2AB69EB0004181C9 /* collectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA546EB2AB69EB0004181C9 /* collectionViewTests.swift */; };
 		ED1F28D02A06967100A50CAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1F28CF2A06967100A50CAD /* AppDelegate.swift */; };
 		ED1F28D22A06967100A50CAD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1F28D12A06967100A50CAD /* SceneDelegate.swift */; };
 		ED1F28D42A06967100A50CAD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1F28D32A06967100A50CAD /* ViewController.swift */; };
@@ -19,7 +20,19 @@
 		ED1F28EB2A07613200A50CAD /* ImageStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1F28EA2A07613200A50CAD /* ImageStruct.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		1BA546ED2AB69EB0004181C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED1F28C42A06967100A50CAD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED1F28CB2A06967100A50CAD;
+			remoteInfo = collectionView;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		1BA546E92AB69EB0004181C9 /* collectionViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = collectionViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BA546EB2AB69EB0004181C9 /* collectionViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = collectionViewTests.swift; sourceTree = "<group>"; };
 		ED1F28CC2A06967100A50CAD /* collectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = collectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED1F28CF2A06967100A50CAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED1F28D12A06967100A50CAD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +47,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1BA546E62AB69EB0004181C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		ED1F28C92A06967100A50CAD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -45,10 +65,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1BA546EA2AB69EB0004181C9 /* collectionViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				1BA546EB2AB69EB0004181C9 /* collectionViewTests.swift */,
+			);
+			path = collectionViewTests;
+			sourceTree = "<group>";
+		};
 		ED1F28C32A06967100A50CAD = {
 			isa = PBXGroup;
 			children = (
 				ED1F28CE2A06967100A50CAD /* collectionView */,
+				1BA546EA2AB69EB0004181C9 /* collectionViewTests */,
 				ED1F28CD2A06967100A50CAD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				ED1F28CC2A06967100A50CAD /* collectionView.app */,
+				1BA546E92AB69EB0004181C9 /* collectionViewTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,6 +111,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		1BA546E82AB69EB0004181C9 /* collectionViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BA546F12AB69EB0004181C9 /* Build configuration list for PBXNativeTarget "collectionViewTests" */;
+			buildPhases = (
+				1BA546E52AB69EB0004181C9 /* Sources */,
+				1BA546E62AB69EB0004181C9 /* Frameworks */,
+				1BA546E72AB69EB0004181C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1BA546EE2AB69EB0004181C9 /* PBXTargetDependency */,
+			);
+			name = collectionViewTests;
+			productName = collectionViewTests;
+			productReference = 1BA546E92AB69EB0004181C9 /* collectionViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		ED1F28CB2A06967100A50CAD /* collectionView */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = ED1F28E02A06967200A50CAD /* Build configuration list for PBXNativeTarget "collectionView" */;
@@ -108,9 +156,13 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1420;
+				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
+					1BA546E82AB69EB0004181C9 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = ED1F28CB2A06967100A50CAD;
+					};
 					ED1F28CB2A06967100A50CAD = {
 						CreatedOnToolsVersion = 14.2;
 					};
@@ -133,11 +185,19 @@
 			projectRoot = "";
 			targets = (
 				ED1F28CB2A06967100A50CAD /* collectionView */,
+				1BA546E82AB69EB0004181C9 /* collectionViewTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1BA546E72AB69EB0004181C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		ED1F28CA2A06967100A50CAD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -151,6 +211,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1BA546E52AB69EB0004181C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BA546EC2AB69EB0004181C9 /* collectionViewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		ED1F28C82A06967100A50CAD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -165,6 +233,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1BA546EE2AB69EB0004181C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED1F28CB2A06967100A50CAD /* collectionView */;
+			targetProxy = 1BA546ED2AB69EB0004181C9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		ED1F28D52A06967100A50CAD /* Main.storyboard */ = {
@@ -186,6 +262,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		1BA546EF2AB69EB0004181C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9626PS532X;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nsertay.collectionViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/collectionView.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/collectionView";
+			};
+			name = Debug;
+		};
+		1BA546F02AB69EB0004181C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9626PS532X;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nsertay.collectionViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/collectionView.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/collectionView";
+			};
+			name = Release;
+		};
 		ED1F28DE2A06967200A50CAD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -359,6 +473,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1BA546F12AB69EB0004181C9 /* Build configuration list for PBXNativeTarget "collectionViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BA546EF2AB69EB0004181C9 /* Debug */,
+				1BA546F02AB69EB0004181C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		ED1F28C72A06967100A50CAD /* Build configuration list for PBXProject "collectionView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
